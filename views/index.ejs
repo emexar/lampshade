@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>My First Bitstarter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+          rel="stylesheet" type="text/css">
+    <style type="text/css">
+
+      /* Large desktop */
+      @media (min-width: 980px) { 
+        body {
+         padding-top: 60px;
+        }
+       .linediv-l {
+         border-right: 1px white solid;
+        }
+       .linediv-r {
+         border-left: 1px white solid;
+       }
+      }
+
+      /* Landscape phones and down */
+      @media (max-width: 480px) { 
+       .copy {
+         padding: 2.5% 10%;
+       }
+       .linediv-l {
+         border-bottom: 1px white solid;
+       }
+       .linediv-r {
+         border-top: 1px white solid;
+       }
+      }
+
+      /* All form factors */
+
+      /* Main body and headings */
+      body{
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
+      p.lead {
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
+        color: red;
+      }
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+      /* Video pitch and Action */
+      .pitch {
+        padding: 2.5% 0%;
+      }
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics {
+        text-align: center;
+      }
+      .statistics h3, .statistics p {
+        color: white;
+      }
+
+      /* Marketing Copy and Footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5% 0%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
+
+     /* http://support.addthis.com/customer/portal/questions/1136093-share-buttons-in-center-position */      
+     div.addthis_toolbox {
+      width: 174px;
+      margin: 0 auto;
+     }
+    </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-43030074-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+  </head>
+  <body>
+
+    <!-- Mobile-friendly navbar adapted from example. -->
+    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar"
+                  data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="#">Bitstarter</a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li><a href="/about">About</a></li>
+              <li><a href="/orders">BookedOrders</a></li>
+              <li><a href="mailto:mxr@cloudgro.com">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <!-- We use row-fluid inside containers to achieve a resizable layout. -->
+    <!-- blogs.endjin.com/2013/04/tips-for-implementing-responsive-designs-using-bootstrap/ -->
+    <!-- http://stackoverflow.com/a/12270322 -->
+    <div class="container">
+      <!-- Font and paired font of .heading/.subheading and body from Google Fonts -->
+      <!-- www.google.com/fonts/specimen/Ubuntu -->
+      <!-- www.google.com/fonts/specimen/Ubuntu#pairings -->
+      <div class="row-fluid heading">
+        <div class="span12">
+          <h1>Fabric Lampshade</h1>
+        </div>
+      </div> 
+      <div class="row-fluid subheading">
+        <div class="span12">
+          <!-- Special typography from Bootstrap for lead paragraph. -->
+          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+          <p class="lead">Print Your Own Textile Lampshade</p>
+        </div>
+      </div>
+      <div class="row-fluid pitch">
+        <div class="span5 offset1 video">
+            <!--
+            <img class="img-polaroid" src="http://placehold.it/480x300">
+            -->
+            <img class="img-polaroid" src="http://i.imgur.com/NLaSC5t.jpg">
+        </div>
+
+        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+        <div class="span5 actions">
+          <div class="row-fluid">
+          <div class="span8 offset2">
+            <div class="row-fluid statistics">
+              <div class="span4">
+                <!-- linediv-l and linediv-r give dividing lines that look
+                different in horizontal and vertical layouts, illustrating
+                media queries. -->
+                <div class="linediv-l">
+                <% var backers = 0; var bc_sum = 0 %>
+                <% for(var i=0; i<orders.length; i++) {%>
+                    <% backers = orders.length %>
+                    <% bc_sum = bc_sum + orders[i].amount %>
+                <% } %>
+                <h3><%= backers %></h3> <p>backers</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-c">
+                  <h3><%= bc_sum %></h3> <p>of $85,000</p>
+                </div>
+              </div>
+              <div class="span4">
+                <div class="linediv-r">
+                <h3 id="countdown">60</h3> <p>days left</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row-fluid">
+          <div class="span10 offset1">
+            <!-- Bootstrap progress bar -->
+            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+            <div class="thermometer progress active">
+              <div class="bar bar-success" style="width: <%= (bc_sum / 250) * 100 %>%;"></div>
+              <div class="bar bar-warning" style="width: <%= 100 - (bc_sum / 250) * 100 %>%;"></div>
+            </div>
+          </div>
+          </div>
+          <div class="row-fluid">
+          <div class="span6 offset3 order">
+            <a class="coinbase-button" data-code="1a7e57317406a4bb803c5b76c980ca1e" data-button-style="custom_large" data-button-text="Preorder with Bitcoins" href="https://coinbase.com/checkouts/1a7e57317406a4bb803c5b76c980ca1e">Preorder with Bitcoins</a><script src="https://coinbase.com/assets/button.js" type="text/javascript"></script>
+      </div>
+          </div>
+          <div class="row-fluid">
+          <div class="span8 offset2 social">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
+              <a class="addthis_button_preferred_1"></a>
+              <a class="addthis_button_preferred_2"></a>
+              <a class="addthis_button_preferred_3"></a>
+              <a class="addthis_button_preferred_4"></a>
+              <a class="addthis_button_compact"></a>
+              <a class="addthis_counter addthis_bubble_style"></a>
+            </div>
+         <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-52020b414676c5db"></script>
+            <!-- AddThis Button END -->
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Beyond this part the marketing copy begins. -->
+      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+      <!-- http://placehold.it -->
+      <div class="row-fluid section1">
+        <div class="span5 offset1 asset">
+          <img class="img-polaroid" alt="Placeholder" src="http://i.imgur.com/ZjYNoRD.gif">
+        </div>
+        <div class="span5 copy">
+          <p>Match the mood of your room with your own designed lampshade. Or, alternatively, select one from our community designers. We get together, share our design, select the very best one, or even sell your lampshade design in our ecommerce platform we create.</p>
+          <p>Once you have selected your own design or a ready made one, we'll print it onto fabric that later be converted to georgeous lampshades complete with the lamp kit, wireframe and cable. The kit will be flat packed to minimize shipping cost and easy handling.</p>
+          <p>Chip in your bitcoins now and we'll convert them to sales credit once we commercially started. And, the more you put the money in, the more voucher amount you will get as the conversion gets better. So, basically we will borrow your money and return it back to you as sales voucher upon commercial launch. After all, it is your money anyway.</p>
+        </div>
+      </div>
+
+      <div class="row-fluid section2">
+        <div class="span5 offset1 copy copy-right">
+          <p>We are committed to creating high quality fabric lampshades. And, we've been working with our design and manufacturing partners for the past few weeks, perfecting the product. The wireframe is made of ABS plastics. This is high quality injected plastic part coming out from our precision mould. We are also working hard so that your lampshades kit to be affordable for all.</p>
+        </div>
+        <div class="span5 asset">
+          <!--img class="img-polaroid" alt="Placeholder" src="http://placehold.it/480x300"-->
+          <img class="img-polaroid" alt="Placeholder" src="http://i.imgur.com/jLTknTD.gif">
+        </div>
+      </div>
+
+      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+      <div class="row-fluid faq">
+          <div class="span10 offset1">
+            <h3>FAQ</h3>
+            <div class="accordion" id="accordion2">
+    
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseOne">
+                    How will the fund be spent? 
+                  </a>
+                </div>
+                <div id="collapseOne" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    The majority will go towards purchasing the textile printer. Currently, textile printer is relatively <a href="http://goodandbadprinters.blogspot.com/2011/10/if-you-think-to-invest-textile-printer.html" target="_blank">expensive</a>. One way to lower the price of the textile printer is to generate as much demand as possible. 
+                    Another portion of the fund will be used for developing moulds for wireframe, lamp kit and other plastic parts. On the software side, the fund will be used mainly for the development of the e-commerce website
+                    The rest will be used to pay operating costs for the first year of operation.
+                    If we exceed our goal, any additional funds will go preferentially towards speeding up development so that we can launch sooner.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseTwo">
+                    What is Lampshade Credit Conversion?
+                  </a>
+                </div>
+                <div id="collapseTwo" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Your donation will be converted to credit that can be used later as sales voucher once our ecommerce is ready. This scheme gives flexibility for us to receive any amount of money. Bigger amount will be converted to bigger sales voucher as the conversion rate is not linear.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseThree">
+                    Why fabric?
+                  </a>
+                </div>
+                <div id="collapseThree" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    We think fabric is one of the most flexible material. The material creates warm feeling. It is changeable according to the mood of the room. With fabric, we could also flat packed all the items for easier delivery as well as saving the cost.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFour">
+                    Is the lampshade washable/changeable?
+                  </a>
+                </div>
+                <div id="collapseFour" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Yes. It is changeable for the same type of wireframe.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseFive">
+                    Can the lampshade be used for standing lamp?
+                  </a>
+                </div>
+                <div id="collapseFive" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Yes. The lampshade will come with E27 hang kit + wireframe. For standing lamp you will just use the wireframe. You could store the E27 hang kit for later use.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseSix">
+                    What kind of lamp is suitable for the lampshade?
+                  </a>
+                </div>
+                <div id="collapseSix" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Any kind of lamp can be used as long as under 60W.  With current energy saving lamps, the rated wattage should be more than enough for a typical room.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseSeven">
+                    Is there any alternative payment other than bitcoins?
+                  </a>
+                </div>
+                <div id="collapseSeven" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    If there is enough interest/traction, we will open another payment gateway, possibly paypal and credit cards. You could help raise the interest level by spreading the words using twitter, facebook, and other social media. We will monitor this periodically.
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-group">
+                <div class="accordion-heading">
+                  <a class="accordion-toggle" data-toggle="collapse"
+                     data-parent="#accordion2" href="#collapseEight">
+                    What next?
+                  </a>
+                </div>
+                <div id="collapseEight" class="accordion-body collapse">
+                  <div class="accordion-inner">
+                    Our focus will be more on architecture/interior design. So expect to have more things on fabrics, e.g wall paper/fabric, drapes, bed coverings, etc. customized to your design.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+      </div>
+
+      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+      <!-- http://creativecommons.org/licenses/ -->
+      <div class="row-fluid footer">
+        <div class="span12">
+          <p>This work is licensed under
+            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+              By-SA 3.0
+            </a>, without all the cruft that would otherwise be
+            put at the bottom of the page.</p>
+        </div>
+      </div>
+    </div>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-43030074-1', 'herokuapp.com');
+  ga('send', 'pageview');
+</script>
+<script type ="text/javascript">
+  jQuery(document).ready(function($) {
+    today = new Date();
+    BigDay = new Date("December 31, 2013");
+    msPerDay = 24 * 60 * 60 * 1000;
+    timeLeft = (BigDay.getTime() - today.getTime());
+    e_daysLeft = timeLeft / msPerDay;
+    daysLeft = Math.floor(e_daysLeft);
+    $("#countdown").text(daysLeft);
+    // or if not using JQuery (but might have problem during page load)
+    //document.getElementById('countdown').innerHTML= daysLeft;
+});
+</script>
+  </body>
+</html>
