@@ -183,7 +183,7 @@
                 <% var backers = 0; var bc_sum = 0 %>
                 <% for(var i=0; i<orders.length; i++) {%>
                     <% backers = orders.length %>
-                    <% bc_sum = bc_sum + orders[i].amount %>
+                    <% bc_sum = bc_sum + Math.round(orders[i].amount * 10000) / 10000 %>
                 <% } %>
                 <h3><%= backers %></h3> <p>backers</p>
                 </div>
